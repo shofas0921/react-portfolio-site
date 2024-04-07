@@ -1,5 +1,6 @@
 import CoverImage from '../images/cover-image.jpg';
 import ProfileImage from '../images/profile-image.png';
+import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const Header = () => {
   return (
@@ -17,6 +18,12 @@ export const Header = () => {
               </li>
               <li className="icon-link">
                 {/* TODO */}
+              </li>
+              <li className="icon-link">
+                {/* リンク先は任意のURLを指定してください */}
+                <a href="https://github.com">
+                  <FaGithub />
+                </a>
               </li>
             </ul>
           </div>
