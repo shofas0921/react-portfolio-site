@@ -2,25 +2,26 @@ import CoverImage from '../images/cover-image.jpg';
 import ProfileImage from '../images/profile-image.png';
 
 export const Header = () => {
-  <header className='main-cover' style={{backgroundImage: `url(${CoverImage})`}}>
-    {/* overlayはカバー画像の上に透過して表示される背景画像です*/}
-    <div className='overlay'></div>
-    <div className='container'>
-      <div className="display-table-contents">
-        {/* カバー画像 */}
-        <div className="profile-thumb" style={{backgroundImage: `url(${ProfileImage})`}}></div>
-        {/* {名前と肩書は皆さんのお名前や肩書を自由に入れてください} */}
-        <h1 className="title-text">あなたの名前</h1>
-        <h3 className="title-text">あなたの肩書(ex.Engineer)</h3>
-        <ul className="social-icons">
-          <li className="icon-link">
-            {/* TODO */}
-          </li>
-          <li className="icon-link">
-            {/* TODO */}
-          </li>
-        </ul>
+  return (
+    <header className="main-cover" style={{backgroundImage: `url(${CoverImage})`}}>
+      <div className="overlay"></div>
+      <div className="container">
+        <div className="display-table">
+          <div className="display-table-contents">
+            <div className="profile-thumb" style={{backgroundImage: `url(${ProfileImage})`}}></div>
+            <h1 className="title-text">あなたの名前</h1>
+            <h3 className="title-text">あなたの肩書（ex.Engineer）</h3>
+            <ul className="social-icons">
+              <li className="icon-link">
+                {/* TODO */}
+              </li>
+              <li className="icon-link">
+                {/* TODO */}
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+  );
 };
